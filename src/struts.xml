@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+
+<constant name="struts.i18n.encoding" value="UTF-8"></constant>
+<package name="default" extends="struts-default">
+	  <!--定义doLogin的Action,class属性使用Spring配置文件中定义的相应的Bean实例名称  -->
+      <!-- <action name="doLogin" class="userAction">
+      	定义处理结果和资源之间的映射关系
+          <result name="input">/shop_jsp/shop_HomePage.jsp</result>
+          <result name="success">/shop_jsp/shop_HomePagelogin.jsp</result>
+      </action> -->
+      <action name="user_*" class="userAction" method="{1}">
+      	<!-- 定义处理结果和资源之间的映射关系-->
+			<result name="input">/shop_jsp/shop_HomePage.jsp</result>
+			<result name="success" type="redirectAction">shop_toShowHome.action</result>			
+			<result name="findusersuccess" type="redirect">/shop_jsp/shop_UserPublish.jsp</result>
+			<result name="updatesuccess" type="redirect">/shop_jsp/shop_UserPublish.jsp</result>			
+				<interceptor-ref name="defaultStack"></interceptor-ref>
+				<interceptor-ref name="fileUpload">					
+					<param name="maximumSize">5000000</param>
+				</interceptor-ref>
+      </action>
+      <action name="shop_*" class="shopAction" method="{1}">
+      	<result name="toshowgoodtypesuccess">/shop_jsp/shop_HomePagelogin.jsp</result>
+      	<result name="findgoodbytypeidsuccess">/shop_jsp/shop_HomePageByType.jsp</result>
+      	<result name="toaddgoodsuccess">/shop_jsp/shop_WantSell.jsp</result>
+      	<result name="publishsuccess">/shop_jsp/shop_SubSuccess.jsp</result>
+      	<result name="findupallgoodsuccess">/shop_jsp/shop_MyShop.jsp</result>
+      	<result name="finddowngoodsuccess">/shop_jsp/shop_DownGood.jsp</result>
+      	<result name="findinvaildgoodsuccess">/shop_jsp/shop_InvaildGood.jsp</result>
+      	<result name="findtoupdategoodsuccess">/shop_jsp/shop_PublishAgainSuccess.jsp</result>
+      	<result name="updategoodsuccess">/shop_jsp/shop_ToCheck.jsp</result>
+      	<result name="findtochecksuccess">/shop_jsp/shop_ToCheck.jsp</result>
+      	<result name="toupdategoodsuccess">/shop_jsp/shop_EditGood.jsp</result>
+      	<result name="updategoodtodownsuccess">/shop_jsp/shop_DownGood.jsp</result>
+      	<result name="updategoodtoupsuccess">/shop_jsp/shop_MyShop.jsp</result>
+      	<result name="deletegoodsuccess">/shop_jsp/shop_MyShop.jsp</result>
+      	<result name="findusergoodsuccess">/shop_jsp/shop_HimShop.jsp</result>
+        <result name="tofindgoodbygoodidsuccess">/shop_jsp/shop_GoodMessage.jsp</result>
+      	<interceptor-ref name="defaultStack"></interceptor-ref>
+				<interceptor-ref name="fileUpload">
+					<param name="maximumSize">5000000</param>
+	    </interceptor-ref>	
+      </action>
+</package>
+
+</struts>    

@@ -1,0 +1,427 @@
+
+*{
+	margin:0px;
+	padding:0px;
+}
+html,body {
+    width: 100%;
+    height: 100%;
+}
+a {
+    text-decoration: none;
+}
+.top {
+    background-color: #FFF;
+    height: 38px;
+    width: 100%;
+}
+.top #site-nav {
+    position: relative;
+    z-index: 26;
+    min-width: 980px;
+    max-width: 1180px;
+    height: 100%;
+    margin: 0 auto;
+}
+.top .sn-quick-menu {
+    color: #ff3366;
+	margin-top:8px;
+    position: absolute;
+    float: right;
+    right: 0;
+    top: 0;
+    height: 26px;
+    line-height: 26px;
+    -webkit-backface-visibility: hidden;
+}
+.top .sn-quick-menu li {
+    margin-right: 38px;
+    float: left;
+    position: relative;
+    list-style: none;
+}
+.top .sn-quick-menu li a {
+    color: #ff3366;
+    text-decoration: none;
+}
+
+
+.mid {
+	background-color: #efefef;
+	heigth:200px;
+    width: 100%;}
+.cui_hd {
+    position: relative;
+    z-index: 26;
+    min-width: 980px;
+    max-width: 1180px;
+    height: 80px;
+    margin: 0 auto;
+}
+.cui_hd .ctriplogo {
+    position: relative;
+    z-index: 10;
+    display: inline-block;
+    width: 180px;
+    height: 70px;
+    margin: 28px 0;
+    overflow: hidden;
+}
+.cui_hd .ctriplogo a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background:url(../../image/shop/logo.png) no-repeat;
+    text-indent: -999px;
+    overflow: hidden;
+}
+.cui_hd .cui_search {
+    position: absolute;
+    top: 36px;
+    left: 260px;
+    z-index: 10;
+    width: 28%;
+	margin: 10px 0;
+    font-family: "Microsoft Yahei", Tahoma;
+}
+
+.cui_hd .cui_search input[type="text"] {
+    border-radius: 10px;
+	
+}
+.cui_hd .cui_search input {
+   position: absolute;
+    top: 0;
+    left: 0;
+    width: 520px;
+    height: 40px;
+    padding: 0 45px 0 5px;
+    line-height: 28px;
+    font-size: 19px;
+    font-family:"Microsoft Yahei", Tahoma;
+	color:#c3c0c0;
+    border: 1px solid #ff3366;
+    outline: 0 none;
+}
+
+
+.cui_hd .cui_search button {
+    position: absolute;
+    top: 0px;
+    right: -486px;
+    width: 100%;
+    height: 41px;
+    cursor: pointer;
+    border: 0 none;   
+    border-radius: 0;
+    background:url(../../image/shop/soulogo.png) no-repeat;
+}
+.cui_hd .nav-shop {
+    width: 190px;
+    height: 44px;
+    position: absolute;
+    right: 0px;
+    top: 34px;
+    font-family: Arial, tahoma, verdana, "Microsoft YaHei", Simsun, sans-serif;
+    padding: 10px 20px 0px 16px;
+}
+.sell-contanier { 
+	width:100%;
+    margin-top:40px;
+	height:50px;    
+	}
+	
+.sell-contanier #sell-center{  
+    margin-left:25%;		
+	
+	}
+.sell-contanier #wantbuy{
+	width:35%;
+	heigth:40px;		
+	float:left;
+	
+}
+.sell-contanier #wantsell{
+	width:65%;
+	heigth:40px;	
+	float:right;
+}
+.sell-contanier #want-buy {
+	  color:#FFF;
+	  background-color:#fe6d6d;
+	  font-family:"Arial Black", Gadget, sans-serif;
+	  width:260px; 
+	  height:40px;
+      border: 1px solid #fe6d6d;
+      -moz-border-radius: 15px;      /* Gecko browsers */
+      -webkit-border-radius: 15px;   /* Webkit browsers */
+      border-radius:15px;            /* W3C syntax */
+	}
+
+.sell-contanier #want-sell {
+	  color:#FFF;
+	  background-color:#fece6d;
+	  font-family:"Arial Black", Gadget, sans-serif;
+	  width:260px; 
+	  height:40px;
+      border: 1px solid #fece6d;
+      -moz-border-radius: 15px;      /* Gecko browsers */
+      -webkit-border-radius: 15px;   /* Webkit browsers */
+      border-radius:15px;            /* W3C syntax */
+	}
+.bottom{
+	margin-top:30px;
+	background-color:#FFF; 
+    height:100%;
+    width: 100%;
+	}
+.bottom-center{
+	font-family:"ËÎÌו";
+	font-size:20px;
+	color:#000;
+	margin:0 auto;
+	width:980px;
+	height:420px;
+	border:2px solid #ffacc1;
+	}
+.bottom-center #pubContanier{
+	
+	margin-left:50px;
+	margin-right:50px;
+	}
+.bottom-center #pubContanier .good-hrt{
+	margin-bottom:5px;
+	margin-top:5px;
+	heigth:2px;
+	background-color:#efefef;
+	margin-top:90px;	
+	}
+.bottom-center #pubContanier .goodOne{
+	margin-top:10px;	
+	width:126px;
+	height:157px;
+	}
+#file
+{
+    width:126px;
+    height:157px;
+    opacity:0;
+    cursor:pointer;
+    position:absolute;
+}
+.bottom-center #pubContanier .goodDp{
+	heigth:50px;
+	margin-top:5px;	
+	}
+.bottom-center #pubContanier .goodTwo{
+	margin-top:0px;	
+	
+	}
+.bottom-center #pubContanier .good-hr{
+	margin-bottom:5px;
+	margin-top:5px;
+	heigth:2px;
+	background-color:#efefef;
+	}	
+.bottom-center #pubContanier input[type="text"]{
+	font-size:18px;
+	background-color:transparent;
+	border:0px;
+	}
+ .textarea{
+     width:880px;
+	 height:80px;
+	 position:absolute;
+	 background:none;
+	 border:0px;
+	 z-index:9;
+            }
+  .note{
+     position:absolute;
+	 line-height:20px;
+	 padding:3px 5px;
+             }
+.goodTwo select{
+    position:relative; 
+	top:0; 
+	left:0; 
+	width:82px; 
+	height:25px; 
+	filter:alpha(opacity: 0;); 
+	font:14px/20px "Microsoft YaHei"; 
+	color:#fe6d6d; 
+	border:1px solid #fe6d6d;
+}
+.goodTwo select option { 
+	text-indent:10px; 
+} 
+.goodTwo select option:hover { 
+	background-color:#fe6d6d; 
+	color:#fff; 
+} 
+#button-sub{
+	width:980px;
+	heigth:80px;	
+	margin-left:260px;
+	margin-top:20px;
+	margin-bottom:20px;
+	}
+#goodSub{
+	margin-left:150px;
+	color:#FFF;
+    background-color:#fe6d6d;
+    font-family:"Arial Black", Gadget, sans-serif;
+	width:260px; 
+	height:40px;
+    border: 1px solid #fe6d6d;
+    -moz-border-radius: 15px;      /* Gecko browsers */
+    -webkit-border-radius: 15px;   /* Webkit browsers */
+    border-radius:15px;  
+	
+	}
+#goodCancle{
+	margin-left:200px;
+	color:#FFF;
+    background-color:#6effcf;
+    font-family:"Arial Black", Gadget, sans-serif;
+	width:260px; 
+	height:40px;
+    border: 1px solid #6effcf;
+    -moz-border-radius: 15px;      /* Gecko browsers */
+    -webkit-border-radius: 15px;   /* Webkit browsers */
+    border-radius:15px;  
+	}
+.div_black{
+      visibility:hidden;
+        width:280px;
+        height:135px;
+        position:absolute;
+        top:550px;
+        left:600px;
+        z-index:1000;
+        background-color: #efefef;
+        border:2px solid #ffacc1;
+        box-shadow:#ffacc1 1px 1px ;
+    }
+.div_iterm{
+        margin:auto;
+       visibility:hidden;
+        width:240px;
+        position:absolute;
+        top:570px;
+        left:640px;
+        z-index:1001;
+    }
+.confirmup{
+	margin-top:15px;
+    margin-left:58px;
+    font-family:"Arial Black";
+    font-size: 12px;
+}
+.confirm{	
+    margin-left:58px;
+    font-family:"Arial Black";
+    font-size: 15px;
+}
+.div_sub{
+    margin-top:20px;
+    width:110px;
+    
+
+}
+.description_btn{
+    text-align: "center";
+	color:#FFF;
+    background-color:#fece6d;
+    font-family:"Arial Black", Gadget, sans-serif;
+	width:80px; 
+	height:40px;
+    border: 1px solid #fece6d;
+    -moz-border-radius: 15px;      /* Gecko browsers */
+    -webkit-border-radius: 15px;   /* Webkit browsers */
+    border-radius:15px; 
+}
+.close_btn{
+    text-align:center;
+    margin-left:65px;
+	color:#FFF;
+	font-size: 15px;
+    background-color:#fece6d;
+    font-family:"Arial Black", Gadget, sans-serif;
+	width:60px; 
+	height:20px;
+    border: 2px solid #fece6d;
+    -moz-border-radius: 12px;      /* Gecko browsers */
+    -webkit-border-radius: 12px;   /* Webkit browsers */
+    border-radius:10px; 
+}
+.div_black1{
+      visibility:hidden;
+        width:280px;
+        height:135px;
+        position:absolute;
+        top:550px;
+        left:600px;
+        z-index:1000;
+        background-color: #efefef;
+        border:2px solid #ffacc1;
+        box-shadow:#ffacc1 1px 1px ;
+    }
+.div_iterm1{
+        margin:auto;
+       visibility:hidden;
+        width:240px;
+        position:absolute;
+        top:570px;
+        left:640px;
+        z-index:1001;
+    }
+.confirmup1{
+	margin-top:15px;
+    margin-left:10px;
+    font-family:"Arial Black";
+    font-size: 12px;
+}
+.confirm1{	
+    margin-left:68px;
+    font-family:"Arial Black";
+    font-size: 15px;
+}
+.div_sub1{
+    margin-top:20px;
+    width:110px;
+    
+
+}
+
+.close_btn1{
+    text-align:center;
+    margin-left:65px;
+	color:#FFF;
+	font-size: 15px;
+    background-color:#fece6d;
+    font-family:"Arial Black", Gadget, sans-serif;
+	width:60px; 
+	height:20px;
+    border: 2px solid #fece6d;
+    -moz-border-radius: 12px;      /* Gecko browsers */
+    -webkit-border-radius: 12px;   /* Webkit browsers */
+    border-radius:10px; 
+}
+.span_name{
+   
+	font-size:15px;
+	color:#ff80c0;
+	visibility:hidden;
+	width:150px;
+	
+}
+.span_price{
+   
+	font-size:15px;
+	color:#ff80c0;
+	visibility:hidden;
+	width:150px;
+	
+}
+	

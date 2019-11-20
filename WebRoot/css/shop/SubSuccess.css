@@ -1,0 +1,92 @@
+
+*{
+	margin:0px;
+	padding:0px;
+
+}
+html,body {
+    width: 100%;
+    height: 100%;
+}
+a {
+    text-decoration: none;
+}
+.top {
+    background-color: #FFF;
+    height: 38px;
+    width: 100%;
+}
+.top #site-nav {
+    position: relative;
+    z-index: 26;
+    min-width: 980px;
+    max-width: 1180px;
+    height: 100%;
+    margin: 0 auto;
+}
+.top .sn-quick-menu {
+    color: #ff3366;
+	margin-top:8px;
+    position: absolute;
+    float: right;
+    right: 0;
+    top: 0;
+    height: 26px;
+    line-height: 26px;
+    -webkit-backface-visibility: hidden;
+}
+.top .sn-quick-menu li {
+    margin-right: 38px;
+    float: left;
+    position: relative;
+    list-style: none;
+}
+.top .sn-quick-menu li a {
+    color: #ff3366;
+    text-decoration: none;
+}
+
+
+.mid {
+	heigth:200px;
+    width: 100%;
+}
+#photo{
+	margin-left:70px;
+	margin-top:40px;
+}
+.mid-center{
+	heigth:700px;
+	text-align:center;
+	font-size:100px;
+	color:#ff3366;
+	}
+.bottom{
+	margin-top:150px;
+	heigth:200px;
+	text-align:center;
+	}
+.bottom #want-buy {
+	  color:#FFF;
+	  background-color:#fe6d6d;
+	  font-family:"Arial Black", Gadget, sans-serif;
+	  width:260px; 
+	  height:40px;
+      border: 1px solid #fe6d6d;
+      -moz-border-radius: 15px;      /* Gecko browsers */
+      -webkit-border-radius: 15px;   /* Webkit browsers */
+      border-radius:15px;            /* W3C syntax */
+	}
+
+.bottom #want-sell {
+	  color:#FFF;
+	  margin-left:150px;
+	  background-color:#fece6d;
+	  font-family:"Arial Black", Gadget, sans-serif;
+	  width:260px; 
+	  height:40px;
+      border: 1px solid #fece6d;
+      -moz-border-radius: 15px;      /* Gecko browsers */
+      -webkit-border-radius: 15px;   /* Webkit browsers */
+      border-radius:15px;            /* W3C syntax */
+	}
